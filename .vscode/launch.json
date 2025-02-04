@@ -1,0 +1,23 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Launch Program",
+      "skipFiles": [
+        "<node_internals>/**"
+      ],
+      "runtimeExecutable": "node",
+      "sourceMaps": true,
+      "args": ["./scripts/jest/jest-cli.js", "ReactDOM-test.js", "-r", "stable", "-e", "production"],
+      "env": {
+        "NODE_ENV": "development",
+        "JEST_ENABLE_SOURCE_MAPS": "inline",
+      }
+    }
+  ]
+}
