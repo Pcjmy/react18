@@ -13,7 +13,7 @@
       ],
       "runtimeExecutable": "node",
       "sourceMaps": true,
-      "args": ["./scripts/jest/jest-cli.js", "ReactDOM-test.js", "-r", "stable", "-e", "production"],
+      "args": ["./scripts/jest/jest-cli.js", "${fileBasename}", "-r", "stable", "-e", "production"],
       "env": {
         "NODE_ENV": "development",
         "JEST_ENABLE_SOURCE_MAPS": "inline",
